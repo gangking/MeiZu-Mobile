@@ -1,0 +1,389 @@
+body {
+    background-color: #eee;
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    max-width: 6.4rem;
+    min-width: 3.2rem;
+}
+
+/*顶部*/
+.fixtopheader, .topheader {
+    width: 100%;
+    height: 0.42rem;
+}
+
+.topheader {
+    line-height: 0.42rem;
+    background-color: #fff;
+    font-size: 0.12rem;
+}
+
+.logoleft {
+    padding-left: 0.08rem;
+}
+
+.logoleft span {
+    color: #0BBBEF;
+
+}
+
+.logoleft span:first-of-type {
+    font-family: unset;
+    margin-right: 0.08rem;
+    letter-spacing: 0.02rem;
+}
+
+.logoright {
+    padding-right: 0.08rem;
+}
+
+.logoright span {
+    margin-left: 0.14rem;
+}
+
+/*顶部固定栏*/
+.fixtopheader {
+    position: fixed;
+    background: #2D2C32 url("../images/htop.jpg") no-repeat left top;
+    background-size: contain;
+    z-index: 999999999999;
+}
+
+.fixtopheader span {
+    color: #fff;
+    font-size: 0.18rem;
+    position: absolute;
+    top: 0.11rem;
+    left: 0.08rem;
+}
+
+/*轮播图开始*/
+.ullistbox {
+    width: 100%;
+    height: 1.4rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.ullistbox ul:first-of-type {
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ullistbox ul:first-of-type li {
+    float: left;
+    height: 100%;
+}
+
+.ullistbox ul:first-of-type li img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*轮播按钮*/
+.ullistbox ul:nth-of-type(2) {
+    position: absolute;
+    z-index: 111;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
+
+.ullistbox ul:nth-of-type(2) li {
+    float: left;
+    width: 0.06rem;
+    height: 0.06rem;
+    background-color: #C5C1C3;
+    border-radius: 50%;
+    margin-left: 0.06rem;
+}
+
+.ullistbox ul:nth-of-type(2) .active {
+    background-color: #00C3F5;
+}
+
+.ullistbox ul:nth-of-type(2) li:first-of-type {
+    margin-left: 0;
+}
+
+/*导航栏*/
+.nav {
+    width: 100%;
+    height: 0.85rem;
+    background-color: #fff;
+    margin: 0.08rem 0;
+}
+
+.nav ul:first-of-type {
+    width: 100%;
+}
+
+.nav ul:first-of-type li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #666;
+    font-size: 0.1rem;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+}
+
+.nav ul:first-of-type li img {
+    display: inline-block;
+    width: 0.42rem;
+    height: 0.42rem;
+}
+
+/*导航结束、广告*/
+.adv {
+    width: 100%;
+    height: 1.18rem;
+    margin-bottom: 0.08rem;
+}
+
+.adv img {
+    width: 100%;
+    height: 100%;
+}
+
+/*三件特惠商品*/
+.threecom {
+    width: 100%;
+    height: 1.64rem;
+    margin-bottom: 0.08rem;
+}
+
+.threecom ul:first-of-type {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*flex-direction: column;*/
+}
+
+.threecom ul:first-of-type li {
+    flex: 3;
+    height: 100%;
+    background-color: #fff;
+}
+
+.threecom ul:first-of-type li img {
+    width: 100%;
+    height: 100%;
+}
+
+/*.threecom ul:first-of-type li:nth-of-type(2) {*/
+/*margin: 0 0.06rem;*/
+/*}*/
+/*热品推荐*/
+.hotcom {
+    width: 100%;
+    margin-top: 0.06rem;
+}
+
+.hotcom .whitebg {
+    background-color: #fff;
+}
+
+.comtitle {
+    width: 100%;
+    height: 0.35rem;
+    border-bottom: 1px solid #EFEFEF;
+    padding: 0.12rem 0 0 0.08rem;
+    box-sizing: border-box;
+}
+
+.comtitle h3 {
+    margin: 0;
+    font-size: 0.12rem;
+    padding-left: 0.06rem;
+    border-left: 0.03rem solid #00C3F5;
+}
+
+/*商品列表*/
+.comlist {
+    width: 100%;
+    height: 2.65rem;
+    background-color: #fff;
+}
+
+.comlist ul:first-of-type {
+    width: 100%;
+}
+
+.comlist ul:first-of-type li {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.comlist ul:first-of-type .heightone {
+    height: 1.76rem;
+}
+
+.comlist ul:first-of-type .heightonebox {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.comlist ul:first-of-type .heighttwo {
+    height: 0.9rem;
+}
+
+.hotcom ul:first-of-type .logoright {
+    border-right: 0.01rem solid #F3F3F3;
+}
+
+.hotcom ul:first-of-type .logobottom {
+    border-bottom: 0.01rem solid #F3F3F3;
+}
+
+.hotcom ul:first-of-type li img {
+    width: 50%;
+}
+
+.comlist ul:first-of-type .logooneimg2 img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.comlist ul:first-of-type .logooneimg1 img {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.comlistsontitle {
+    padding: 0.16rem 0 0 0.08rem;
+}
+
+.comlistsontitle p {
+    font-size: 0.1rem;
+    color: #999;
+}
+
+.comlistsontitle p:first-of-type {
+    color: black;
+}
+
+.comlistsontitle p:last-of-type {
+    color: #F0415F;
+}
+
+.comlistsontitle p:last-of-type del {
+    font-size: 0.08rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/*手机*/
+.comphone {
+    width: 100%;
+    height: 100%;
+}
+
+.comphone ul:first-of-type {
+    width: 100%;
+    height: 100%;
+}
+
+.comphone ul:first-of-type li {
+    width: 49.2%;
+    height: 1.96rem;
+    text-align: center;
+    margin-bottom: 0.04rem;
+    background-color: #fff;
+}
+
+.comphone ul:first-of-type li:nth-of-type(odd) {
+    float: left;
+}
+
+.comphone ul:first-of-type li:nth-of-type(even) {
+    float: right;
+}
+
+.comphone ul:first-of-type li img {
+    margin-top: 0.2rem;
+}
+
+.comphone ul:first-of-type .listonephone img {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.phonetitle p {
+    font-size: 0.1rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+
+.phonetitle p:first-of-type {
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.phonetitle p:last-of-type {
+    color: #F0415F;
+}
+.phonetitle p:last-of-type del {
+    font-size: 0.08rem;
+    color: #999;
+    text-decoration: line-through;
+}
+/*页面底部*/
+.footer {
+    width: 100%;
+    height: 1.40rem;
+    /*background-color: red;*/
+    font-size: 0.1rem;
+    color: #999;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+} 
+.qrCode {
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+.qrCode img {
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: middle;
+    margin-right: 0.08rem;
+}
+.footer p {
+   line-height: 0.16rem;
+}
+
+/*回到顶部按钮*/
+.toTop {
+    width: 0.32rem;
+    height: 0.32rem;
+    font-size: 0.12rem;
+    line-height: 0.32rem;
+    text-align: center;
+    background-color: #b2b2b2;
+    color: #eee;
+    position: fixed;
+    bottom: 0.28rem;
+    right: 0.08rem;
+    z-index: 8888888;
+    font-family: unset;
+    display: none;
+}
